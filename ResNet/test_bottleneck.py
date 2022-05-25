@@ -72,8 +72,8 @@ class ACmix(nn.Module):
         b, c, h, w = q.shape
         h_out, w_out = h//self.stride, w//self.stride
 
-
-# ### att
+        
+        # ### att
         # ## positional encoding
         pe = self.conv_p(position(h, w, x.is_cuda))
 
